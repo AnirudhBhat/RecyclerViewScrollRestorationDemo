@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
     private fun setupRecyclerView() {
         rv_title.layoutManager = LinearLayoutManager(this)
         rv_title.adapter = RecyclerAdapter()
-        rv_title.adapter?.stateRestorationPolicy = RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
+        rv_title.adapter?.stateRestorationPolicy = RecyclerView.Adapter.StateRestorationPolicy.ALLOW
     }
 }
